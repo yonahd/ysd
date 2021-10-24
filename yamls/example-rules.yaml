@@ -1,0 +1,11 @@
+required:
+  env: str
+  enabled: bool
+  replicas: int
+  db:
+    name: str
+    test1:
+      user: str
+optional:
+  disk: str
+  metrics: bool

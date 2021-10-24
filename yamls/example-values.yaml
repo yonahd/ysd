@@ -1,0 +1,23 @@
+network:
+  service:
+    port: 8060
+enabled: true
+image:
+  app: my-app:build
+replicas: 1
+env: dev
+disk: local
+db:
+  name: "my_db"
+  app:
+    user:
+      vault:
+        enabled: "true"
+  test1:
+    user: "user2"
+    password: "abc"
+resources:
+  requests:
+    memory: "300M"
+  limits:
+    memory: "400M"
