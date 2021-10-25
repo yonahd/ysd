@@ -25,4 +25,8 @@ class ColorLog:
 
     @staticmethod
     def print_success_type(field: str) -> None:
-        print(colored("SUCCESS: Rule for field {} exists".format(field), 'green'))
+        print(colored("SUCCESS: Field {} exists and is correct type".format(field), 'green'))
+
+    @staticmethod
+    def print_success_field(field: str) -> None:
+        print(colored("SUCCESS: Rule for field {} exist".format(field), 'green'))

@@ -55,14 +55,15 @@ resources:
 Example output:
 ```buildoutcfg
 ---Checking required fields---
-SUCCESS: Rule for field env exists
-SUCCESS: Rule for field enabled exists
-SUCCESS: Rule for field replicas exists
-SUCCESS: Rule for field db.name exists
-SUCCESS: Rule for field db.test1.user exists
+SUCCESS: Field env exists and is correct type
+SUCCESS: Field enabled exists and is correct type
+SUCCESS: Field replicas exists and is correct type
+SUCCESS: Field db.name exists and is correct type
+SUCCESS: Field db.test1.user exists and is correct type
 ---Checking optional fields---
-SUCCESS: Rule for field disk exists
+SUCCESS: Field disk exists and is correct type
 Field metrics does not exist -- optional
+
 ```
 
 Enforcing yaml structure - fields cannot exist if it doesn't have a rule:

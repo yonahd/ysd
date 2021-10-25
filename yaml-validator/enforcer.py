@@ -23,7 +23,7 @@ class Enforce:
 
     def __eval_rule(self, value, rules, full_field_name):
         if self.__rule_checker.field_exist(rules, value) is True:
-            self.__logger.print_success_type(full_field_name)
+            self.__logger.print_success_field(full_field_name)
         else:
             self.__logger.print_fail_rule(full_field_name)
 
